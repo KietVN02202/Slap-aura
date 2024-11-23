@@ -8,7 +8,7 @@ function CreateSlapAura()
 
     local ScreenGui = Instance.new("ScreenGui")
     ScreenGui.Name = "SlapUi"
-    ScreenGui.ResetOnSpawn = false
+    ScreenGui.ResetOnSpawn = true
     ScreenGui.Parent = game.Players.LocalPlayer:FindFirstChild("PlayerGui")
 
     local SlapButton = Instance.new("ImageButton", ScreenGui)
@@ -22,7 +22,7 @@ function CreateSlapAura()
     
     local TextLabel = Instance.new("TextLabel", SlapButton)
     TextLabel.Size = UDim2.new(1, 0, 1, 0)
-    TextLabel.Text = "Slap"
+    TextLabel.Text = "E"
     TextLabel.TextColor3 = Color3.new(1, 1, 1)
     TextLabel.BackgroundTransparency = 1
     TextLabel.TextScaled = true
