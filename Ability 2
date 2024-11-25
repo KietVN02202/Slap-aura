@@ -1,5 +1,5 @@
 function CreateSlapAura()
-    local slapAuraScript = game:HttpGet("https://raw.githubusercontent.com/KietVN02202/Custom-glove-Beta-/refs/heads/main/Slap%20aura1.1")
+    local slapAuraScript = game:HttpGet("https://raw.githubusercontent.com/KietVN02202/Slap-aura/refs/heads/main/Ult")
     loadstring(slapAuraScript)()
 
     if game.Players.LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("SlapUi") then
