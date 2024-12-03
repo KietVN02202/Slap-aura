@@ -66,3 +66,60 @@ function CreateSlapAura()
 end
 
 CreateSlapAura()
+
+local ScreenGui = Instance.new("ScreenGui")
+    ScreenGui.Name = "SlapUi"
+    ScreenGui.ResetOnSpawn = true
+    ScreenGui.Parent = game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+
+    local SlapButton = Instance.new("ImageButton", ScreenGui)
+    SlapButton.Size = UDim2.new(0.1, 0, 0.15, 0)
+    SlapButton.Position = UDim2.new(0.85, 0, 0.33, 0)
+    SlapButton.AnchorPoint = Vector2.new(0.5, 0.5)
+    SlapButton.BackgroundColor3 = Color3.new(1, 0, 0)
+    SlapButton.BackgroundTransparency = 0
+    SlapButton.Active = true
+    SlapButton.Draggable = true
+    
+    local TextLabel = Instance.new("TextLabel", SlapButton)
+    TextLabel.Size = UDim2.new(1, 0, 1, 0)
+    TextLabel.Text = "F"
+    TextLabel.TextColor3 = Color3.new(1, 1, 1)
+    TextLabel.BackgroundTransparency = 1
+    TextLabel.TextScaled = true
+
+    local Corner = Instance.new("UICorner", SlapButton)
+    Corner.CornerRadius = UDim.new(0, 8)
+    
+    local Stroke = Instance.new("UIStroke", SlapButton)
+    Stroke.Color = Color3.new(0, 0, 0)
+    Stroke.Transparency = 0.2
+    Stroke.Thickness = 3
+    
+    local SlapAura = false
+    local lastClickTime = 0
+    local SlapAuraCooldown = 0.5
+    local Range = 20
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+local animation = Instance.new("Animation")
+animation.AnimationId = "rbxassetid://16144846625"
+local animationTrack = humanoid:LoadAnimation(animation)
+
+SlapButton.MouseButton1Click:Connect(function()
+    animationTrack:Play()
+    task.wait(0.2)
+    
+    local args = {
+        [1] = "Bomb"
+    }
+    game:GetService("ReplicatedStorage").RetroAbility:FireServer(unpack(args))
+    
+    local hrp = character:FindFirstChild("HumanoidRootPart")
+    if hrp then
+        hrp.CFrame = hrp.CFrame + hrp.CFrame.LookVector * 30
+    end
+end)
