@@ -198,6 +198,6 @@ gloveHits = {
 ["The Flex"] = game.ReplicatedStorage.FlexHit,
 ["Custom"] = game.ReplicatedStorage.CustomHit,
 ["God's Hand"] = game.ReplicatedStorage.Godshand,
-["Error"] = game.ReplicatedStorage.Errorhit
+["Error"] = game.ReplicatedStorage.Errorhit,
 ["Titan"] = game.ReplicatedStorage.GeneralHit
 }
