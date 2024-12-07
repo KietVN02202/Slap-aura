@@ -163,7 +163,7 @@ countdownLabel.Font = Enum.Font.SourceSansBold
 countdownLabel.Visible = true -- Hidden until countdown starts
 countdownLabel.Parent = screenGui
 
-local cooldownTime = 5.5 -- Cooldown time in seconds
+local cooldownTime = 3.5 -- Cooldown time in seconds
 local canClick = true
 
 local player = game.Players.LocalPlayer
