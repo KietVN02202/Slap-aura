@@ -18,6 +18,7 @@ gloveHits = {
 ["Confusion"] = game.ReplicatedStorage.GeneralHit,
 ["Elude"] = game.ReplicatedStorage.GeneralHit,
 ["Glitch"] = game.ReplicatedStorage.GeneralHit,
+["Titan"] = game.ReplicatedStorage.GeneralHit,
 ["Snowball"] = game.ReplicatedStorage.GeneralHit,
 ["fish"] = game.ReplicatedStorage.GeneralHit,
 ["Killerfish"] = game.ReplicatedStorage.GeneralHit,
@@ -198,6 +199,5 @@ gloveHits = {
 ["The Flex"] = game.ReplicatedStorage.FlexHit,
 ["Custom"] = game.ReplicatedStorage.CustomHit,
 ["God's Hand"] = game.ReplicatedStorage.Godshand,
-["Error"] = game.ReplicatedStorage.Errorhit,
-["Titan"] = game.ReplicatedStorage.GeneralHit
+["Error"] = game.ReplicatedStorage.Errorhit
 }
