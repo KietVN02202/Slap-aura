@@ -1,4 +1,4 @@
-lfunction CreateSlapAura()
+function CreateSlapAura()
     local slapAuraScript = game:HttpGet("https://raw.githubusercontent.com/KietVN02202/Custom-glove-Beta-/refs/heads/main/Slap%20aura1.1")
     loadstring(slapAuraScript)()
 
