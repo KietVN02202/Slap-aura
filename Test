@@ -20,6 +20,7 @@ gloveHits = {
 ["Glitch"] = game.ReplicatedStorage.GeneralHit,
 ["Titan"] = game.ReplicatedStorage.GeneralHit,
 ["Snowball"] = game.ReplicatedStorage.GeneralHit,
+["Mace"] = game.ReplicatedStorage.GeneraHit,
 ["fish"] = game.ReplicatedStorage.GeneralHit,
 ["Killerfish"] = game.ReplicatedStorage.GeneralHit,
 ["🗿"] = game.ReplicatedStorage.GeneralHit,
