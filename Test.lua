@@ -114,6 +114,7 @@ gloveHits = {
     ["Baby"] = game.ReplicatedStorage.GeneralHit,
     ["Stalker"] = game.ReplicatedStorage.GeneralHit,
     ["Angler"] = game.ReplicatedStorage.GeneralHit,
+    ["Stick"] = game.ReplicatedStorage.GeneralHit,
     ------------------------------------------------------------------------
     ["ZZZZZZZ"] = game.ReplicatedStorage.ZZZZZZZHit,
     ["Brick"] = game.ReplicatedStorage.BrickHit,
